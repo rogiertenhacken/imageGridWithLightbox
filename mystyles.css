@@ -1,0 +1,9 @@
+.card-columns {
+  display: inline-block
+}
+
+.card {
+  border: none;
+  /*border: 2px solid #000;
+  /*background-color: #000;*/
+}
