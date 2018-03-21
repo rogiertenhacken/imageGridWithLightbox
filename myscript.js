@@ -13,12 +13,12 @@ for (let i = 0; i < 20; i++) {
 
   // Open the Modal
 function openModal() {
-  document.getElementById('myModal').style.display = "block";
+  document.getElementById('myLightbox').style.display = "block";
 }
 
 // Close the Modal
 function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+  document.getElementById('myLightbox').style.display = "none";
 }
 
 // create an auto dev-creater for the modal / lightbox
