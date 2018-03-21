@@ -47,8 +47,9 @@ h1 {
   background-color: rgba(255, 255, 255, 0.8);
   margin: auto;
   padding: 0;
-  width: 90%;
-  /*max-width: 2048px;*/
+  width: 100%;
+  height: auto;
+  /*max-width: 1200px;*/
 }
 
 /* Next & previous buttons */
@@ -80,3 +81,14 @@ h1 {
 .next:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
+
+.close {
+  font-weight: lighter;
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .modal {
+        padding-top: 8px;
+    }
+ }
+/* you might want to add media queries for landscape position on smaller devices */
