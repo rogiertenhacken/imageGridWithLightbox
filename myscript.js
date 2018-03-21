@@ -5,19 +5,19 @@ for (let i = 0; i < 20; i++) {
   //div.setAttribute("id","R"+i);
   div.setAttribute("class", "card");
   img.setAttribute("class", "card-img-top");
-  img.setAttribute("onclick", "openModal();");
-  img.onclick = function() {openModal();};
+  img.setAttribute("onclick", "openLightBox();");
+  img.onclick = function() {openLightBox();};
   div.innerHTML = "&nbsp;"; //optional to prevent collapse
   document.getElementById("main").appendChild(div).appendChild(img).src = "image/roadBlack.jpg"; //write div to page
   };
 
   // Open the Modal
-function openModal() {
+function openLightBox() {
   document.getElementById('myLightbox').style.display = "block";
 }
 
 // Close the Modal
-function closeModal() {
+function closeLightBox() {
   document.getElementById('myLightbox').style.display = "none";
 }
 
