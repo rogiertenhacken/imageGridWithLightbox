@@ -1,3 +1,8 @@
+h1 {
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
 .card-columns {
   display: inline-block
 }
@@ -6,4 +11,72 @@
   border: none;
   /*border: 2px solid #000;
   /*background-color: #000;*/
+}
+
+.card-columns .card {
+  margin: 0px;
+}
+
+.card-img-top {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+
+
+/* The Modal (background) */
+#myModal {
+  height: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 8vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  /*max-width: 2048px;*/
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 20px;
+  transition: 0.8s ease;
+  border-radius: 0 100px 100px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 100px 0 0 100px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
