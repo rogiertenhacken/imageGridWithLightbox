@@ -21,6 +21,8 @@ function closeLightBox() {
   document.getElementById('myLightbox').style.display = "none";
 }
 
+//www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+
 // create an auto dev-creater for the modal / lightbox
 
 // how to set the src for different pictures?! (line9)
