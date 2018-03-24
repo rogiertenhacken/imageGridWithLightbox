@@ -1,4 +1,4 @@
-let allImages = [];
+//let allImages = [""];
 
 for (let i = 0; i < 20; i++) {
   console.log('the for loop');
