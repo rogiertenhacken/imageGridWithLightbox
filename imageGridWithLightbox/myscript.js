@@ -10,7 +10,7 @@ for (let i = 0; i < 20; i++) {
   img.setAttribute("onclick", "openLightBox();");
   img.onclick = function() {openLightBox();};
   div.innerHTML = "&nbsp;"; //optional to prevent collapse
-  document.getElementById("main").appendChild(div).appendChild(img).src = "image/roadBlack.jpg"; //write div to page
+  document.getElementById("main").appendChild(div).appendChild(img).src = "https://source.unsplash.com/random"; //write div to page
   };
 
   // Open the Modal
