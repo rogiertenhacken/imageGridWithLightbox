@@ -1,5 +1,8 @@
 let allImages = ["image/balloons.jpg", "image/beach.jpg", "image/birdTriple.jpg", "image/dear.jpg", "image/reflection.jpg", "image/starSoup.jpg", "image/train.jpg"];
 
+let wut = document.createElement("div");
+console.log();
+
 for (let i = 0; i < allImages.length; i++) {
   console.log('the for loop');
   let div = document.createElement("div");
@@ -8,7 +11,6 @@ for (let i = 0; i < allImages.length; i++) {
   div.setAttribute("class", "card");
   img.setAttribute("class", "card-img-top");
   img.addEventListener('click', openLightBox);
-
   div.innerHTML = "&nbsp;"; //optional to prevent collapse
   document.getElementById("main").appendChild(div).appendChild(img).src = allImages[i]; //write div to page
   console.log("get element.")
@@ -16,13 +18,26 @@ for (let i = 0; i < allImages.length; i++) {
 
   // Open the Modal
 function openLightBox() {
-  document.getElementById('myLightbox').style.display = "block";
+    document.getElementById('myLightbox').style.display = "block";
+    for (let i = 0; i < allImages.length; i++) {
+      console.log('the for loop lightBox');
+      //let div = document.createElement("div");
+      let img = document.createElement("img");
+      //div.setAttribute("id","R"+i);
+      //div.setAttribute("class", "card");
+      //img.setAttribute("class", "card-img-top");
+      //img.addEventListener('click', openLightBox);
+      //div.innerHTML = "&nbsp;"; //optional to prevent collapse
+      document.getElementById("largeImage").appendChild(img).src = allImages[i]; //write div to page
+      console.log("get element.largeImage")
+      };
 }
 
 // Close the Modal
 function closeLightBox() {
   document.getElementById('myLightbox').style.display = "none";
 }
+
 
 //leave for now, make image array to see if they actually change!
 function plusSlides() {
